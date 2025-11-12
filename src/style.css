@@ -1,0 +1,73 @@
+:root {
+    --primary-color: #0d6efd;
+    --dark-color: #0b1b2b;
+    --gradient-start: #0d6efd;
+    --gradient-end: #6610f2;
+}
+
+body {
+    font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+    background-color: #f8f9fb;
+    color: #1c1f23;
+}
+
+.hero {
+    background: linear-gradient(120deg, var(--gradient-start), var(--gradient-end));
+    min-height: 70vh;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.hero-badge {
+    background-color: rgba(255, 255, 255, 0.15);
+    letter-spacing: 2px;
+}
+
+.hero-glow {
+    position: absolute;
+    inset: 15% auto auto 60%;
+    width: 320px;
+    height: 320px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.25), transparent 60%);
+    filter: blur(20px);
+}
+
+.section-title {
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+.highlight-card {
+    border-radius: 1.25rem;
+}
+
+.skill-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-card:hover,
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 1.25rem 2.5rem rgba(11, 27, 43, 0.08);
+}
+
+.project-card {
+    border-radius: 1rem;
+}
+
+.tech-badge {
+    background: rgba(13, 110, 253, 0.1);
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .hero-glow {
+        display: none;
+    }
+}
