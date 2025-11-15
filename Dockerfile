@@ -1,5 +1,5 @@
 # Imagen base con Node
-FROM node:21.x
+FROM node:22.x
 
 # Directorio de trabajo
 WORKDIR /app
