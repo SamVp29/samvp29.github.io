@@ -6,7 +6,7 @@ Sitio personal construido con **React + Vite** para mostrar proyectos, habilidad
 
 - React 18 + Vite 5
 - Bootstrap 5 y estilos personalizados
-- Configuracion lista para GitHub Pages (`vite.config.js` con `base="/Portafolio/"`)
+- Configuracion lista para GitHub Pages (`vite.config.js` con `base="/samvp29.github.io/"`)
 - Docker + Docker Compose para levantar el entorno sin instalar Node
 
 ## Scripts
